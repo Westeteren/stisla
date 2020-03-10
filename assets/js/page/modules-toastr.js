@@ -1,65 +1,37 @@
 "use strict";
 
 $("#toastr-1").click(function() {
-  iziToast.info({
-    title: 'Hello, world!',
-    message: 'This awesome plugin is made iziToast toastr',
-    position: 'topRight'
-  });
+  toastr.info('This awesome plugin is made toastr toastr', 'Hello, world!')
 });
 
 $("#toastr-2").click(function() {
-  iziToast.success({
-    title: 'Hello, world!',
-    message: 'This awesome plugin is made by iziToast',
-    position: 'topRight'
-  });
+  toastr.success('Have fun storming the castle!', 'Miracle Max Says')
 });
 
 $("#toastr-3").click(function() {
-  iziToast.warning({
-    title: 'Hello, world!',
-    message: 'This awesome plugin is made by iziToast',
-    position: 'topRight'
-  });
+  toastr.warning('My name is Inigo Montoya. You killed my father, prepare to die!')
 });
 
 $("#toastr-4").click(function() {
-  iziToast.error({
-    title: 'Hello, world!',
-    message: 'This awesome plugin is made by iziToast',
-    position: 'topRight'
-  });
+  toastr.error('I do not think that word means what you think it means.', 'Inconceivable!')
 });
 
 $("#toastr-5").click(function() {
-  iziToast.show({
-    title: 'Hello, world!',
-    message: 'This awesome plugin is made by iziToast',
-    position: 'bottomRight' 
-  });
+  toastr.options.positionClass = 'toast-bottom-right';
+  toastr.info('This awesome plugin is made toastr toastr', 'Hello, world!')
 });
 
 $("#toastr-6").click(function() {
-  iziToast.show({
-    title: 'Hello, world!',
-    message: 'This awesome plugin is made by iziToast',
-    position: 'bottomCenter' 
-  });
+  toastr.options.positionClass = 'toast-bottom-center';
+  toastr.success('Have fun storming the castle!', 'Miracle Max Says')
 });
 
 $("#toastr-7").click(function() {
-  iziToast.show({
-    title: 'Hello, world!',
-    message: 'This awesome plugin is made by iziToast',
-    position: 'bottomLeft' 
-  });
+  toastr.options.positionClass = 'toast-bottom-left';
+  toastr.warning('My name is Inigo Montoya. You killed my father, prepare to die!')
 });
 
 $("#toastr-8").click(function() {
-  iziToast.show({
-    title: 'Hello, world!',
-    message: 'This awesome plugin is made by iziToast',
-    position: 'topCenter' 
-  });
+  toastr.options.positionClass = 'toast-top-center';
+  toastr.error('I do not think that word means what you think it means.', 'Inconceivable!')
 });
